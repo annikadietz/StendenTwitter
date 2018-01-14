@@ -1,0 +1,223 @@
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper
+{
+    width: 100vw;
+    height: 100vh;
+    background-color: green;
+    background: url(images/layout/bg3.jpg) no-repeat -30px -30px fixed;
+    background-size: calc(100vw + 60px) calc(100vh + 60px);
+    float: left;
+    position: relative;
+    overflow: hidden;
+    font-family: 'caviar_dreams';
+}
+
+#wrapper #main 
+{
+    width: 950px;
+    background: #41455f;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 0;
+    padding: 10px;
+    padding-right: 0;
+    text-align: center;
+    color: white;
+    border: 0;
+    border-top-left-radius: 300px;
+    border-bottom-left-radius: 300px;
+    
+}
+
+#wrapper #main h1
+{
+    line-height: 80px;
+    font-size: 40px;
+    padding-left: 200px;
+    font-weight: bold;
+}
+
+#wrapper #main h2
+{
+    padding-left: 200px;
+}
+
+#wrapper #main a, #wrapper #main a:visited
+{
+    color: white;
+    font-weight: bold;
+}
+
+#wrapper #main a:hover
+{
+    font-style: italic;
+}
+
+#wrapper #main #logoBox
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    top: -100px;
+    text-align: center;
+}
+
+#wrapper #main #logoBox img
+{
+    position: relative;
+    width: 170%;
+    height: 170%;
+    top: -35%;
+    left: 3%;
+}
+
+#wrapper #main #formBox
+{
+    width: 600px;
+    height: 350px;
+    position: relative;
+    left: 350px;
+    background: url(images/layout/bg3.jpg) no-repeat calc(545px - 100vw) calc(130px - 50vh) fixed;
+    background-size: calc(100vw + 60px) calc(100vh + 60px);
+}
+
+#wrapper #main #formBox::before
+{
+    content: '';
+    display: inline-block;
+    width: 175px;
+    height: 350px;
+    border-top-left-radius: 350px;
+    border-bottom-left-radius: 350px;
+    background: url(images/layout/bg3.jpg) no-repeat calc(720px - 100vw) calc(130px - 50vh) fixed;
+    background-size: calc(100vw + 60px) calc(100vh + 60px);
+    position: absolute;
+    left: -175px;
+}
+
+#wrapper #main #formBox #placeholder
+{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    top: 100px;
+    left: -65px;
+    border: 3px solid #050618;
+    border-radius: 150px;
+    overflow: hidden;
+    float: left;
+    text-align: center;
+    background-color: #41455f;
+    box-shadow: 0px 0px 10px 3px #050618;
+}
+
+#wrapper #main #formBox #placeholder img
+{
+    width: auto;
+    height: 90%;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#wrapper #main #formBox .formWrap
+{
+    width: 500px;
+    position: absolute;
+    right: 0;
+    color: white;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: white;
+    font-weight: bold;
+}
+
+#wrapper #main #formBox .formWrap h2
+{
+    padding: 0;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#wrapper #main #formBox .formWrap .line
+{
+    width: 100%;
+    padding: 5px;
+}
+
+#wrapper #main #formBox .formWrap .line#button
+{
+    width: 90%;
+    margin-right: 10%;
+    text-align: right;
+}
+
+#wrapper #main #formBox .formWrap .line label
+{
+    width: 120px;
+    display: inline-block;
+    text-align: left;
+}
+
+#wrapper #main #formBox .formWrap .line input[type = "text"], #wrapper #formBox .line input[type = "password"],
+#wrapper #formBox .line input[type = "email"], #wrapper #formBox .line input[type = "file"]
+{
+    width: 300px;
+    padding: 7px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    border-bottom-style: solid;
+    border-bottom-color: #41455f;
+    background-color: transparent;
+    color: white;
+    font-family: 'caviar_dreams';
+}
+
+#wrapper #main #formBox .formWrap .line input[type = "text"]:hover, #wrapper #formBox .line input[type = "password"]:hover,
+#wrapper #formBox .line input[type = "email"]:hover, #wrapper #formBox .line input[type = "file"]:hover
+{
+    border-style: solid;
+    border-color: #41455f;
+    
+}
+
+#wrapper #main #formBox .formWrap .line input[type = "text"]:focus, #wrapper #formBox .line input[type = "password"]:focus,
+#wrapper #formBox .line input[type = "email"]:focus, #wrapper #formBox .line input[type = "file"]:focus
+{
+    border-style: solid;
+    border-color: #050618;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#wrapper #main #formBox .formWrap .line input[type = "submit"]
+{
+    width: 200px;
+    padding: 3px;
+    border: 0px solid transparent;
+    border-radius: 40px;
+    background: linear-gradient(to left, rgb(5, 6, 24), rgb(65, 69, 95));
+    color: white;
+    font-family: reality_sunday;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#wrapper #main #formBox .formWrap .line input[type = "submit"]:hover
+{
+    background: linear-gradient(to left, rgba(5, 6, 24, 0.5), rgba(112, 117, 175, 0.5));
+}
